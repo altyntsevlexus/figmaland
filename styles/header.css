@@ -1,7 +1,7 @@
 /* colors */
 
 .header {
-	background-image: url('images/header-background.png');
+	background-image: url('../images/header-background.png');
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: auto;
