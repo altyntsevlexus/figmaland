@@ -43,6 +43,10 @@
 	color: white;
 }
 
+.pricing__list__item_best h5 {
+	color: white;
+}
+
 @media (min-width: 1200px) {
 	.pricing__list__item_best {
 		height: 690px;
