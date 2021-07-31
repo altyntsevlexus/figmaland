@@ -12,7 +12,7 @@
 .features__flexbox {
   display: flex;
   flex-direction: column-reverse;
-  gap: 50px;
+  gap: 80px;
 }
 
 @media (min-width: 1200px) {
