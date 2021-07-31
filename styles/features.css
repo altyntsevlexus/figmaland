@@ -1,0 +1,131 @@
+.features {
+	margin-bottom: 190px;
+	color: var(--gray);
+}
+
+@media (min-width: 1200px) {
+	.features {
+		margin-bottom: 350px;
+	}
+}
+
+.features__flexbox {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 80px;
+}
+
+@media (min-width: 1200px) {
+	.features__flexbox {
+		flex-direction: column;
+		gap: 130px;
+	}
+}
+
+.features__list {
+	max-width: 870px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	color: var(--darkgray);
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 80px;
+}
+
+@media (min-width: 1200px) {
+	.features__list {
+		justify-content: space-between;
+		gap: 0px;
+	}
+}
+
+.features__card {
+	max-width: 255px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.features__card__img {
+	margin-bottom: 27px;
+}
+
+.features__card__title {
+	max-width: 200px;
+	margin-bottom: 20px;
+}
+
+.features__card__description {
+	max-width: 230px;
+}
+
+.features__video {
+	margin: 0 auto;
+	position: relative;
+}
+
+.features__video__img {
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+	filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+}
+
+.features__video__play {
+	width: 61px;
+	height: 61px;
+	position: absolute;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--blue);
+	background-image: url(/images/icons/play.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 12px;
+}
+
+@media (min-width: 768px) {
+	.features__video__play {
+		width: 187px;
+		height: 187px;
+		background-size: 39px;
+	}
+}
+
+.notebook {
+	text-align: left;
+	margin-bottom: 167px;
+}
+
+@media (min-width: 1200px) {
+	.notebook {
+		margin-bottom: 445px;
+	}
+}
+
+.notebook__flexbox {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 60px;
+}
+
+@media (min-width: 1200px) {
+	.notebook__flexbox {
+		gap: 0px;
+		flex-direction: row;
+	}
+}
+
+.notebook__img {
+	max-width: 100%;
+	height: auto;
+}
