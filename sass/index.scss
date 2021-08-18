@@ -1,6 +1,10 @@
 @import "common";
 @import "normalize";
 
+//shared
+@import "./shared/buttons";
+@import "./shared/video";
+
 //sections
 @import "./sections/header";
 @import "./sections/features";
@@ -10,7 +14,3 @@
 @import "./sections/testimonials";
 @import "./sections/footer";
 @import "./sections/contacts";
-
-//shared
-@import "./shared/buttons";
-@import "./shared/video";
