@@ -1,0 +1,83 @@
+.header {
+  background: {
+    image: url("../images/header-background.png");
+    repeat: no-repeat;
+    position: top;
+    size: auto;
+    color: white;
+  }
+  height: 1000px;
+
+  &__logo {
+    margin-right: 0;
+
+    @media (min-width: $desktop) {
+      margin-right: 250px;
+    }
+  }
+
+  &__socials {
+    display: none;
+
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    display: block;
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &__heading {
+    margin: 0 auto;
+    max-width: 680px;
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+.nav-bar {
+  padding: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  max-width: 430px;
+  width: 100%;
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.socials {
+  max-width: 170px;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+///////////////////////////////////////////////
+.header__heading .heading__title {
+  font-size: 48px;
+  font-family: Graphik;
+  font-weight: normal;
+
+  @media (min-width: $tablet) {
+    font-size: 74px;
+    font-family: Graphik-Bold;
+  }
+}
+///////////////////////////////////////////////

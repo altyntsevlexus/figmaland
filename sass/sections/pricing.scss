@@ -1,0 +1,79 @@
+.pricing {
+  padding: 70px;
+  background-color: $darkgray;
+  margin-bottom: 210px;
+
+  &__title {
+    color: white;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+
+  &__card {
+    max-width: 335px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+
+    &--offer {
+      &--best {
+        height: 600px;
+        padding: 85px 0;
+        background-color: $blue;
+        color: white;
+
+        h5 {
+          color: white;
+        }
+
+        @media (min-width: $desktop) {
+          height: 690px;
+        }
+      }
+
+      &--normal {
+        height: 600px;
+        padding: 40px 0;
+        background-color: white;
+        color: $gray;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 5px;
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 15px;
+  }
+}

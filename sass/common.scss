@@ -1,0 +1,135 @@
+/* COLORS */
+$blue: #2091f9;
+$darkgray: #252b42;
+$gray: #374754;
+$lightgray: #f4f4f4;
+
+/* screen width */
+$desktop: 1200px;
+$tablet: 768px;
+
+* {
+  font-family: Graphik, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* H STYLES*/
+
+h1 {
+  font-size: 74px;
+  line-height: 84px;
+  font-family: Graphik-Bold, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 55px;
+  color: $darkgray;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: Graphik-Bold, Arial, Helvetica, sans-serif;
+  color: $darkgray;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* INPUT STYLES */
+
+.input {
+  background-color: $lightgray;
+  color: $darkgray;
+  border: 1px solid #e8e8e8;
+  border-radius: 39px;
+  padding: 16px 35px;
+  outline: none;
+  font-size: 14px;
+  resize: none;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/Graphik-Regular.woff2);
+}
+
+@font-face {
+  font-family: Graphik-Bold;
+  src: url(../fonts/Graphik-Bold.woff2);
+}
+
+/* HEADINGS */
+
+.heading {
+  max-width: 520px;
+
+  &--pos {
+    &--center {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &--left {
+      text-align: center;
+
+      @media (min-width: $desktop) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    margin-bottom: 90px;
+
+    &--hide {
+      display: none;
+
+      @media (min-width: $tablet) {
+        display: inline;
+      }
+    }
+  }
+
+  &__suptitle {
+    margin-bottom: 20px;
+  }
+}
+
+// section main color
+
+.section--color {
+  &--white {
+    color: white;
+  }
+  &--gray {
+    color: $gray;
+  }
+}

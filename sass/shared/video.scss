@@ -1,0 +1,11 @@
+.video {
+  margin: 0 auto;
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+  }
+}
