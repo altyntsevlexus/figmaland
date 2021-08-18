@@ -38,6 +38,17 @@
     margin-top: 100px;
     text-align: center;
   }
+
+  &__title {
+    font-size: 48px;
+    font-family: Graphik;
+    font-weight: normal;
+
+    @media (min-width: $tablet) {
+      font-size: 74px;
+      font-family: Graphik-Bold;
+    }
+  }
 }
 
 .nav-bar {
@@ -68,16 +79,3 @@
   justify-content: space-between;
   align-items: center;
 }
-
-///////////////////////////////////////////////
-.header__heading .heading__title {
-  font-size: 48px;
-  font-family: Graphik;
-  font-weight: normal;
-
-  @media (min-width: $tablet) {
-    font-size: 74px;
-    font-family: Graphik-Bold;
-  }
-}
-///////////////////////////////////////////////
