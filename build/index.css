@@ -456,6 +456,63 @@ a {
   color: inherit;
 }
 
+.button {
+  outline: none;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border-radius: 35px;
+  padding: 16px 60px;
+  text-transform: capitalize;
+}
+.button--type--play {
+  width: 61px;
+  height: 61px;
+  background-color: #2091f9;
+  background-image: url(../images/icons/play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  .button--type--play {
+    width: 187px;
+    height: 187px;
+    background-size: 39px;
+  }
+}
+.button:hover {
+  box-shadow: none;
+}
+.button--color--blue {
+  background-color: #2091f9;
+  color: white;
+}
+.button--color--white {
+  background-color: white;
+  color: #2091f9;
+}
+.button--font--bold {
+  font-family: Graphik-Bold;
+}
+
+.video {
+  margin: 0 auto;
+  position: relative;
+}
+.video__img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+}
+
 .header {
   background-image: url("../images/header-background.png");
   background-repeat: no-repeat;
@@ -1013,63 +1070,6 @@ a {
     justify-content: space-around;
     max-width: 300px;
   }
-}
-
-.button, .input--type--submit {
-  outline: none;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  border-radius: 35px;
-  padding: 16px 60px;
-  text-transform: capitalize;
-}
-.button--type--play {
-  width: 61px;
-  height: 61px;
-  background-color: #2091f9;
-  background-image: url(../images/icons/play.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 12px;
-  border-radius: 50%;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media (min-width: 768px) {
-  .button--type--play {
-    width: 187px;
-    height: 187px;
-    background-size: 39px;
-  }
-}
-.button:hover, .input--type--submit:hover {
-  box-shadow: none;
-}
-.button--color--blue {
-  background-color: #2091f9;
-  color: white;
-}
-.button--color--white {
-  background-color: white;
-  color: #2091f9;
-}
-.button--font--bold {
-  font-family: Graphik-Bold;
-}
-
-.video {
-  margin: 0 auto;
-  position: relative;
-}
-.video__img {
-  width: 100%;
-  height: auto;
-  border-radius: 50px;
-  filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
 }
 
 /*# sourceMappingURL=index.css.map */
