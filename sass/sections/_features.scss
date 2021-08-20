@@ -21,7 +21,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     margin: 0 auto;
     text-align: center;
     flex-direction: row;
@@ -43,10 +43,12 @@
 
   &__img {
     margin-bottom: 27px;
+    width: 45px;
+    height: 45px;
   }
 
   &__title {
-    max-width: 200px;
+    max-width: 220px;
     margin-bottom: 20px;
   }
 

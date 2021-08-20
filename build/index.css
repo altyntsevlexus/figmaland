@@ -38,6 +38,7 @@ h5 {
   line-height: 28px;
   font-family: Graphik, Arial, Helvetica, sans-serif;
   font-weight: 700;
+  letter-spacing: 0.1px;
   color: #252b42;
 }
 
@@ -639,7 +640,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   margin: 0 auto;
   text-align: center;
   flex-direction: row;
@@ -660,9 +661,11 @@ a {
 }
 .features__img {
   margin-bottom: 27px;
+  width: 45px;
+  height: 45px;
 }
 .features__title {
-  max-width: 200px;
+  max-width: 220px;
   margin-bottom: 20px;
 }
 .features__description {
