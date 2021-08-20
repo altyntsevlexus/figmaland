@@ -1,5 +1,4 @@
 .subscribe {
-  text-align: left;
   margin-bottom: 180px;
 
   &__flexbox {
@@ -46,36 +45,23 @@
     align-content: flex-start;
     max-width: 460px;
     text-align: center;
+    gap: 35px;
   }
 }
 
 .subscribe-form {
-  max-width: none;
   width: 100%;
-  padding: 34px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 12px;
 
   &__email {
-    max-width: none;
     width: 100%;
-    margin-bottom: 12px;
-  }
-
-  &__button {
-    max-width: none;
-    width: 100%;
-    padding: 16px 0;
+    padding: 20px 40px;
   }
 
   @media (min-width: $desktop) {
-    max-width: 457px;
-
-    &__email {
-      max-width: 260px;
-      margin-bottom: 0px;
-    }
-
-    &__button {
-      max-width: 172px;
-    }
+    flex-direction: row;
   }
 }

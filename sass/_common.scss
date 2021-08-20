@@ -11,6 +11,7 @@ $tablet: 768px;
 * {
   font-family: Graphik, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -24,7 +25,8 @@ $tablet: 768px;
 h1 {
   font-size: 74px;
   line-height: 84px;
-  font-family: Graphik-Bold, Arial, Helvetica, sans-serif;
+  font-family: Graphik, Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 h2 {
@@ -43,7 +45,8 @@ h4 {
 h5 {
   font-size: 20px;
   line-height: 28px;
-  font-family: Graphik-Bold, Arial, Helvetica, sans-serif;
+  font-family: Graphik, Arial, Helvetica, sans-serif;
+  font-weight: 700;
   color: $darkgray;
 }
 
@@ -64,10 +67,19 @@ p {
   color: $darkgray;
   border: 1px solid #e8e8e8;
   border-radius: 39px;
-  padding: 16px 35px;
+  padding: 20px;
   outline: none;
   font-size: 14px;
+  width: 100%;
+
+  &::placeholder {
+    color: $darkgray;
+  }
+}
+
+.textarea {
   resize: none;
+  border-radius: 0;
 }
 
 /* FONTS */
@@ -75,11 +87,13 @@ p {
 @font-face {
   font-family: Graphik;
   src: url(../fonts/Graphik-Regular.woff2);
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: Graphik-Bold;
+  font-family: Graphik;
   src: url(../fonts/Graphik-Bold.woff2);
+  font-weight: 700;
 }
 
 /* HEADINGS */
@@ -118,7 +132,7 @@ p {
     }
   }
 
-  &__suptitle {
+  &__subtitle {
     margin-bottom: 20px;
   }
 }

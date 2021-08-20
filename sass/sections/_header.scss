@@ -2,11 +2,12 @@
   background: {
     image: url("../images/header-background.png");
     repeat: no-repeat;
-    position: top;
-    size: auto;
+    position: bottom;
+    size: cover;
     color: white;
   }
-  height: 1000px;
+  height: 930px;
+  margin-bottom: 125px;
 
   &__logo {
     margin-right: 0;
@@ -46,7 +47,8 @@
 
     @media (min-width: $tablet) {
       font-size: 74px;
-      font-family: Graphik-Bold;
+      font-family: Graphik;
+      font-weight: 700;
     }
   }
 }
