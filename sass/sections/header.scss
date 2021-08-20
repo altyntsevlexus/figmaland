@@ -67,15 +67,15 @@
   @media (min-width: $desktop) {
     display: block;
   }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .socials {
   max-width: 170px;
   width: 100%;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
