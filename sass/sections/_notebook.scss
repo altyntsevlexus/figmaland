@@ -1,0 +1,27 @@
+.notebook {
+  text-align: left;
+  margin-bottom: 167px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 445px;
+  }
+
+  &__flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    @media (min-width: $desktop) {
+      gap: 0px;
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
