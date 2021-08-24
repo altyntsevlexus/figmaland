@@ -31,6 +31,11 @@
     max-width: 680px;
     margin-top: 100px;
     text-align: center;
+    padding: 0 20px;
+
+    @include media(tablet) {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -39,22 +44,29 @@
       family: Graphik;
       weight: 400;
     }
+    line-height: 55px;
 
     @include media(tablet) {
       font: {
         size: 74px;
         weight: 700;
       }
+      line-height: 84px;
     }
   }
 }
 
 .nav-bar {
-  padding: 54px;
+  padding: 20px 0;
   @extend %flex-between;
-  gap: 45px;
+  gap: 0;
   align-items: center;
   flex-wrap: wrap;
+
+  @include media(tablet) {
+    gap: 45px;
+    padding: 54px;
+  }
 }
 
 .navigation {

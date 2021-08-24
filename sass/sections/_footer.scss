@@ -56,5 +56,10 @@
 
   &__socials {
     margin-top: auto;
+    align-self: center;
+
+    @include media(desktop) {
+      align-self: flex-start;
+    }
   }
 }

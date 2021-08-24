@@ -1,5 +1,5 @@
 .pricing {
-  padding: 100px;
+  padding: 100px 0;
   background-color: $darkgray;
   margin-bottom: 210px;
 
@@ -29,12 +29,13 @@
     &--offer {
       &--best {
         height: 600px;
-        padding: 85px 0;
+        padding: 40px 0;
         background-color: $blue;
         color: white;
 
         @include media(desktop) {
           height: 690px;
+          padding: 85px 0;
         }
       }
 

@@ -10,7 +10,7 @@
     @extend %column-reverse-align-center;
     gap: 80px;
 
-    @include media(desktop) {
+    @include media(tablet) {
       flex-direction: column;
       gap: 130px;
     }
@@ -54,8 +54,10 @@
   }
 
   &__video {
-    width: 1170px;
-    height: 658px;
+    max-width: 1170px;
+    width: 100%;
+    max-height: 658px;
+    height: calc(100vw / 1.87);
     filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
     border-radius: 44.8123px;
   }
