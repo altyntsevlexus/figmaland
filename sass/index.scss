@@ -1,9 +1,12 @@
+//shared
+@import "./shared/placeholders.scss";
+@import "./shared/mixins.scss";
+@import "./shared/colors.scss";
+@import "./shared/buttons";
+
+//
 @import "common";
 @import "normalize";
-
-//shared
-@import "./shared/buttons";
-@import "./shared/video";
 
 //sections
 @import "./sections/header";
@@ -13,5 +16,5 @@
 @import "./sections/subscribe";
 @import "./sections/testimonials";
 @import "./sections/footer";
-@import "./sections/contacts";
+@import "./sections/contact-us";
 @import "./sections/notebook";

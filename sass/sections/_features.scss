@@ -1,16 +1,16 @@
 .features {
   margin-bottom: 190px;
 
-  @media (min-width: $desktop) {
+  @include media(desktop) {
     margin-bottom: 350px;
   }
 
   &__flexbox {
     display: flex;
-    flex-direction: column-reverse;
+    @extend %column-reverse-align-center;
     gap: 80px;
 
-    @media (min-width: $desktop) {
+    @include media(desktop) {
       flex-direction: column;
       gap: 130px;
     }
@@ -19,26 +19,23 @@
   &__list {
     max-width: 870px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: top;
+    @extend %flex-center;
+    align-items: flex-start;
     margin: 0 auto;
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 80px;
-  }
 
-  @media (min-width: $desktop) {
-    justify-content: space-between;
-    gap: 0px;
+    @include media(desktop) {
+      gap: 50px;
+    }
   }
 
   &__card {
     max-width: 255px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %column-align-center;
   }
 
   &__img {
@@ -54,5 +51,12 @@
 
   &__description {
     max-width: 230px;
+  }
+
+  &__video {
+    width: 1170px;
+    height: 658px;
+    filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+    border-radius: 44.8123px;
   }
 }

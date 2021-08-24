@@ -2,21 +2,19 @@
   text-align: left;
   margin-bottom: 167px;
 
-  @media (min-width: $desktop) {
+  @include media(desktop) {
     margin-bottom: 445px;
   }
 
   &__flexbox {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-between;
+    @extend %column-align-center;
     flex-wrap: wrap;
     gap: 60px;
 
-    @media (min-width: $desktop) {
-      gap: 0px;
+    @include media(desktop) {
       flex-direction: row;
+      gap: 0px;
     }
   }
 

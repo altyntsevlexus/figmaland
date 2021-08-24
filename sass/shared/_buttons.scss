@@ -8,6 +8,7 @@
   font-size: 20px;
   background-color: $blue;
   color: white;
+  transition: box-shadow 1s;
 
   &--type--play {
     width: 61px;
@@ -26,7 +27,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media (min-width: $tablet) {
+    @include media(tablet) {
       width: 187px;
       height: 187px;
       background-size: 39px;
@@ -44,8 +45,10 @@
 
   &--font {
     &--bold {
-      font-family: Graphik;
-      font-weight: 700;
+      font: {
+        family: Graphik;
+        weight: 700;
+      }
     }
   }
 

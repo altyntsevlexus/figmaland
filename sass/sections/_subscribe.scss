@@ -2,12 +2,10 @@
   margin-bottom: 180px;
 
   &__flexbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    @extend %flex-between;
+    @extend %column-align-center;
 
-    @media (min-width: $desktop) {
+    @include media(desktop) {
       flex-direction: row;
     }
   }
@@ -19,7 +17,7 @@
     &--desk {
       display: none;
     }
-    @media (min-width: $desktop) {
+    @include media(desktop) {
       &--mob {
         display: none;
       }
@@ -34,7 +32,7 @@
     height: auto;
     margin-bottom: 69px;
 
-    @media (min-width: $desktop) {
+    @include media(desktop) {
       margin-bottom: 0;
     }
   }
@@ -42,7 +40,6 @@
   &__info {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
     max-width: 460px;
     text-align: center;
     gap: 35px;
@@ -51,9 +48,8 @@
 
 .subscribe-form {
   width: 100%;
-  display: flex;
+  @extend %flex-around;
   flex-direction: column;
-  justify-content: space-around;
   gap: 12px;
 
   &__email {
@@ -61,7 +57,7 @@
     padding: 20px 40px;
   }
 
-  @media (min-width: $desktop) {
+  @include media(desktop) {
     flex-direction: row;
   }
 }

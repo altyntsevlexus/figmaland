@@ -9,18 +9,11 @@
   height: 930px;
   margin-bottom: 125px;
 
-  &__logo {
-    margin-right: 0;
-
-    @media (min-width: $desktop) {
-      margin-right: 250px;
-    }
-  }
-
   &__socials {
     display: none;
+    margin-left: auto;
 
-    @media (min-width: $desktop) {
+    @include media(desktop) {
       display: block;
     }
   }
@@ -28,7 +21,7 @@
   &__burger {
     display: block;
 
-    @media (min-width: $desktop) {
+    @include media(desktop) {
       display: none;
     }
   }
@@ -41,38 +34,41 @@
   }
 
   &__title {
-    font-size: 48px;
-    font-family: Graphik;
-    font-weight: normal;
+    font: {
+      size: 48px;
+      family: Graphik;
+      weight: 400;
+    }
 
-    @media (min-width: $tablet) {
-      font-size: 74px;
-      font-family: Graphik;
-      font-weight: 700;
+    @include media(tablet) {
+      font: {
+        size: 74px;
+        weight: 700;
+      }
     }
   }
 }
 
 .nav-bar {
   padding: 54px;
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-between;
+  gap: 45px;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .navigation {
-  max-width: 430px;
+  max-width: 437px;
   width: 100%;
   display: none;
+  font-size: 15px;
 
-  @media (min-width: $desktop) {
+  @include media(desktop) {
     display: block;
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-between;
     align-items: center;
   }
 }
@@ -80,4 +76,14 @@
 .socials {
   max-width: 170px;
   width: 100%;
+
+  &__item--color {
+    &--white {
+      @include svg-change-color-hover(white, $blue);
+    }
+
+    &--blue {
+      @include svg-change-color-hover($blue, $darkgray);
+    }
+  }
 }

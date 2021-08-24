@@ -1,17 +1,9 @@
-/* COLORS */
-$blue: #2091f9;
-$darkgray: #252b42;
-$gray: #374754;
-$lightgray: #f4f4f4;
-
-/* screen width */
-$desktop: 1200px;
-$tablet: 768px;
-
 * {
-  font-family: Graphik, Arial, Helvetica, sans-serif;
+  font: {
+    family: Graphik, Arial, Helvetica, sans-serif;
+    weight: 400;
+  }
   scroll-behavior: smooth;
-  font-weight: 400;
 }
 
 .wrapper {
@@ -22,43 +14,54 @@ $tablet: 768px;
 
 /* H STYLES*/
 
-h1 {
-  font-size: 74px;
+.fs-74 {
+  font: {
+    family: Graphik, Arial, Helvetica, sans-serif;
+    size: 74px;
+    weight: 700;
+  }
   line-height: 84px;
-  font-family: Graphik, Arial, Helvetica, sans-serif;
-  font-weight: 700;
 }
 
-h2 {
-  font-size: 48px;
+.fs-48 {
+  font: {
+    size: 48px;
+    weight: 400;
+  }
   line-height: 55px;
   color: $darkgray;
-  font-weight: normal;
 }
 
-h4 {
-  font-size: 28px;
+.fs-28 {
+  font: {
+    size: 28px;
+    weight: 400;
+  }
   line-height: 40px;
-  font-weight: normal;
 }
 
-h5 {
-  font-size: 20px;
+.fs-20 {
+  font: {
+    family: Graphik, Arial, Helvetica, sans-serif;
+    size: 20px;
+    weight: 700;
+  }
   line-height: 28px;
-  font-family: Graphik, Arial, Helvetica, sans-serif;
-  font-weight: 700;
   letter-spacing: 0.1px;
   color: $darkgray;
 }
 
-h6 {
-  font-size: 16px;
-  line-height: 23px;
-  font-weight: normal;
+.fs-16 {
+  font: {
+    size: 16px;
+    weight: 400;
+  }
+  line-height: 25px;
 }
 
 p {
   font-size: 18px;
+  weight: 400;
 }
 
 /* INPUT STYLES */
@@ -78,6 +81,15 @@ p {
   }
 }
 
+a {
+  color: inherit;
+  transition: color 0.5s;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
 .textarea {
   resize: none;
   border-radius: 0;
@@ -86,15 +98,19 @@ p {
 /* FONTS */
 
 @font-face {
-  font-family: Graphik;
+  font: {
+    family: Graphik;
+    weight: 400;
+  }
   src: url(../fonts/Graphik-Regular.woff2);
-  font-weight: 400;
 }
 
 @font-face {
-  font-family: Graphik;
+  font: {
+    family: Graphik;
+    weight: 700;
+  }
   src: url(../fonts/Graphik-Bold.woff2);
-  font-weight: 700;
 }
 
 /* HEADINGS */
@@ -111,7 +127,7 @@ p {
     &--left {
       text-align: center;
 
-      @media (min-width: $desktop) {
+      @include media(desktop) {
         text-align: left;
       }
     }
@@ -124,10 +140,10 @@ p {
   &__description {
     margin-bottom: 90px;
 
-    &--hide {
+    &--d-inline--tablet {
       display: none;
 
-      @media (min-width: $tablet) {
+      @include media(tablet) {
         display: inline;
       }
     }

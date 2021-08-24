@@ -6,16 +6,14 @@
     max-width: 990px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %column-align-center;
     gap: 60px;
   }
 
   &__client {
     max-width: 190px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-between;
     align-items: center;
   }
 
@@ -38,7 +36,7 @@
       color: $gray;
     }
 
-    @media (min-width: $tablet) {
+    @include media(tablet) {
       &--desk {
         display: block;
       }
