@@ -60,8 +60,10 @@
 }
 
 p {
-  font-size: 18px;
-  weight: 400;
+  font: {
+    size: 18px;
+    weight: 400;
+  }
 }
 
 /* INPUT STYLES */
