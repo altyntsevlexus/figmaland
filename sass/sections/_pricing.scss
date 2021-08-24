@@ -8,7 +8,7 @@
   }
 
   &__list {
-    @extend %flex-between;
+    @extend %flex-around;
     @extend %column-align-center;
     gap: 50px;
 
