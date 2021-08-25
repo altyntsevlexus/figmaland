@@ -63,6 +63,14 @@
   line-height: 25px;
 }
 
+.fs-15 {
+  font: {
+    size: 15px;
+    weight: 400;
+  }
+  line-height: 28px;
+}
+
 p {
   font: {
     size: 18px;
@@ -168,5 +176,18 @@ a {
   }
   &--gray {
     color: $gray;
+  }
+}
+
+.list--d {
+  &--row {
+    @extend %flex-between;
+    align-items: center;
+  }
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }

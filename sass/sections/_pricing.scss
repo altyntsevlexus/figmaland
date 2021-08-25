@@ -59,11 +59,4 @@
     text-align: left;
     gap: 5px;
   }
-
-  &__features {
-    @extend %flex-center;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 15px;
-  }
 }

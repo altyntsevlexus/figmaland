@@ -8,8 +8,10 @@
     text-align: center;
     flex-wrap: wrap;
     gap: 80px;
+    padding: 0;
 
     @include media(desktop) {
+      padding: 0 120px;
       flex-direction: row;
       gap: 0px;
       text-align: left;

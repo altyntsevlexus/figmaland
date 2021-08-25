@@ -1,4 +1,4 @@
-.notebook__flexbox, .contact-details, .contact-us__flexbox, .footer__links, .footer__flexbox, .testimonials__client, .subscribe__flexbox, .partners__card, .navigation__list, .nav-bar {
+.notebook__flexbox, .contact-details, .contact-us__flexbox, .footer__links, .footer__flexbox, .testimonials__client, .subscribe__flexbox, .partners__card, .nav-bar, .list--d--row {
   display: flex;
   justify-content: space-between;
 }
@@ -8,7 +8,7 @@
   justify-content: space-around;
 }
 
-.contact-us__form, .pricing__features, .pricing__info, .partners__list, .features__list {
+.contact-us__form, .pricing__info, .partners__list, .features__list {
   display: flex;
   justify-content: center;
 }
@@ -132,6 +132,12 @@
   line-height: 25px;
 }
 
+.fs-15 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 p {
   font-size: 18px;
   font-weight: 400;
@@ -215,6 +221,15 @@ a:hover {
 }
 .primary--color--gray {
   color: #374754;
+}
+
+.list--d--row {
+  align-items: center;
+}
+.list--d--column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 * {
@@ -632,16 +647,12 @@ a {
   max-width: 437px;
   width: 100%;
   display: none;
-  font-size: 15px;
   padding: 0px 10px;
 }
 @media only screen and (min-width: 1200px) {
   .navigation {
     display: block;
   }
-}
-.navigation__list {
-  align-items: center;
 }
 
 .socials {
@@ -805,11 +816,6 @@ a {
   text-align: left;
   gap: 5px;
 }
-.pricing__features {
-  flex-direction: column;
-  gap: 20px;
-  font-size: 15px;
-}
 
 .subscribe {
   margin-bottom: 180px;
@@ -913,9 +919,11 @@ a {
   text-align: center;
   flex-wrap: wrap;
   gap: 80px;
+  padding: 0;
 }
 @media only screen and (min-width: 1200px) {
   .footer__flexbox {
+    padding: 0 120px;
     flex-direction: row;
     gap: 0px;
     text-align: left;

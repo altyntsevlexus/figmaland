@@ -73,16 +73,10 @@
   max-width: 437px;
   width: 100%;
   display: none;
-  font-size: 15px;
   padding: 0px 10px;
 
   @include media(desktop) {
     display: block;
-  }
-
-  &__list {
-    @extend %flex-between;
-    align-items: center;
   }
 }
 
