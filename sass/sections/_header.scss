@@ -84,13 +84,11 @@
   max-width: 170px;
   width: 100%;
 
-  &__item--color {
-    &--white {
-      @include svg-change-color-hover(white, $blue);
-    }
+  &__item-c-white {
+    @include svg-change-color-hover(white, $blue);
+  }
 
-    &--blue {
-      @include svg-change-color-hover($blue, $darkgray);
-    }
+  &__item-c-blue {
+    @include svg-change-color-hover($blue, $darkgray);
   }
 }

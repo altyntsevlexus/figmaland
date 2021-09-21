@@ -1,4 +1,4 @@
-.notebook__flexbox, .contact-details, .contact-us__flexbox, .footer__links, .footer__flexbox, .testimonials__client, .subscribe__flexbox, .partners__card, .nav-bar, .list--d--row {
+.notebook__flexbox, .contact-details, .contact-us__flexbox, .footer__links, .footer__flexbox, .testimonials__client, .subscribe__flexbox, .partners__card, .nav-bar, .list {
   display: flex;
   justify-content: space-between;
 }
@@ -98,7 +98,6 @@
 
 /* H STYLES*/
 .fs-74 {
-  font-family: Graphik, Arial, Helvetica, sans-serif;
   font-size: 74px;
   font-weight: 700;
   line-height: 84px;
@@ -118,7 +117,6 @@
 }
 
 .fs-20 {
-  font-family: Graphik, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
@@ -216,18 +214,19 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.primary--color--white {
+.primary-color-white {
   color: white;
 }
-.primary--color--gray {
+
+.primary-color--gray {
   color: #374754;
 }
 
 .list--d--row {
+  flex-direction: row;
   align-items: center;
 }
 .list--d--column {
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -659,18 +658,18 @@ a {
   max-width: 170px;
   width: 100%;
 }
-.socials__item--color--white {
+.socials__item-c-white {
   transition: fill 0.5s;
   fill: white;
 }
-.socials__item--color--white:hover {
+.socials__item-c-white:hover {
   fill: #2091f9;
 }
-.socials__item--color--blue {
+.socials__item-c-blue {
   transition: fill 0.5s;
   fill: #2091f9;
 }
-.socials__item--color--blue:hover {
+.socials__item-c-blue:hover {
   fill: #252b42;
 }
 
@@ -898,6 +897,7 @@ a {
 .testimonials__heading--ver--mob {
   max-width: 300px;
   font-size: 14px;
+  font-weight: 700;
   line-height: 17px;
   display: block;
   color: #374754;

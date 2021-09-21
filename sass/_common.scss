@@ -20,7 +20,6 @@
 
 .fs-74 {
   font: {
-    family: Graphik, Arial, Helvetica, sans-serif;
     size: 74px;
     weight: 700;
   }
@@ -46,7 +45,6 @@
 
 .fs-20 {
   font: {
-    family: Graphik, Arial, Helvetica, sans-serif;
     size: 20px;
     weight: 700;
   }
@@ -170,24 +168,24 @@ a {
 
 // section main color
 
-.primary--color {
-  &--white {
-    color: white;
-  }
-  &--gray {
-    color: $gray;
-  }
+.primary-color-white {
+  color: white;
+}
+.primary-color--gray {
+  color: $gray;
 }
 
-.list--d {
-  &--row {
-    @extend %flex-between;
-    align-items: center;
-  }
+.list {
+  @extend %flex-between;
+  &--d {
+    &--row {
+      flex-direction: row;
+      align-items: center;
+    }
 
-  &--column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    &--column {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }

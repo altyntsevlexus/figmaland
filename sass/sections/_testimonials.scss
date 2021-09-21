@@ -30,7 +30,10 @@
 
     &--mob {
       max-width: 300px;
-      font-size: 14px;
+      font: {
+        size: 14px;
+        weight: 700;
+      }
       line-height: 17px;
       display: block;
       color: $gray;
